@@ -98,7 +98,7 @@ def load_mnist_detection(n=2, num_samples=10_000):
         sample_indices = np.random.randint(0, num_mnist, num_detection_labels)
         sample_images = images[sample_indices]
         sample_labels = labels[sample_indices]
-        target_label = np.random.choice(sample_labels, 1)[0]
+        target_label = np.random.randint(0, 9, 1)
         w = sample_images[0].shape[0]
         h = sample_images[0].shape[1]
         x1, y = get_tiled_image(sample_images, sample_labels, w, h, n)
@@ -157,7 +157,7 @@ def cnn_detector_4x4(input_1_shape, input_2_shape):
 
 def main():
     """ MNIST Detection
-        (baseline, maximum accuracy approx. 0.6 + @, current version is not stable)
+        (baseline, maximum accuracy approx. 0.5 + @, current version is not stable)
 
         Input
             - Query [10]
@@ -184,7 +184,7 @@ def main():
 
     model.compile(optimizer='adam',
                   loss='binary_crossentropy',
-                  metrics=['accuracy'])
+                  metrics=['accuracy', 'Precision', 'Recall'])
     model.fit([x1_train, x2_train], y_train, epochs=20)
     model.evaluate([x1_test, x2_test], y_test, verbose=1)
     num_eval_samples = 10
