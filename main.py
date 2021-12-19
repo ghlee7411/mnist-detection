@@ -26,6 +26,25 @@ def load_mnist():
 
 def get_tiled_image(images, labels, w, h, n):
     """
+    Make the input images like belows
+
+               +----+ +----+ +----+ +----+
+    IMAGES:    | 01 | | 02 | | 03 | | 04 |
+               +----+ +----+ +----+ +----+
+
+    LABELS:    [1, 2, 3, 4]
+    TARGET:    [1] (note. randomly chosen)
+
+    to tiled image.
+
+                  +----+----+
+                  | 01 | 03 |
+    SRC IMAGE:    +----+----+
+                  | 02 | 04 |
+                  +----+----+
+
+    DETECTION LABEL:    [[1, 0], [0, 0]]  # result of [[1, 3], [2, 4]] == 1
+
 
     Args:
         images (ndarray): source images
@@ -35,8 +54,8 @@ def get_tiled_image(images, labels, w, h, n):
         n (int): size of detection map
 
     Returns:
-        (ndarray): concatenated source images
-        (ndarray): mapped detection labels
+        (ndarray): concatenated source image
+        (ndarray): mapped detection label
 
     """
     x = np.zeros((w * n, h * n))
