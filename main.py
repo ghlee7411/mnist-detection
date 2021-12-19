@@ -43,7 +43,7 @@ def get_tiled_image(images, labels, w, h, n):
                   | 02 | 04 |
                   +----+----+
 
-    DETECTION LABEL:    [[1, 0], [0, 0]]  # result of [[1, 3], [2, 4]] == 1
+    SRC LABEL:    [[1, 3], [2, 4]]
 
 
     Args:
