@@ -41,51 +41,31 @@ Total params: 152,097
 Trainable params: 152,097
 Non-trainable params: 0
 __________________________________________________________________________________________________
-2021-12-19 09:46:00.600306: W tensorflow/core/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
-Epoch 1/20
-2021-12-19 09:46:00.858129: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
-625/625 [==============================] - 11s 16ms/step - loss: 0.3304 - accuracy: 0.2594 - precision: 0.0991 - recall: 0.0018
-Epoch 2/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.2894 - accuracy: 0.3154 - precision: 0.8601 - recall: 0.0519
-Epoch 3/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.1002 - accuracy: 0.4619 - precision: 0.9055 - recall: 0.7028
-Epoch 4/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0391 - accuracy: 0.4862 - precision: 0.9550 - recall: 0.9211
-Epoch 5/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0239 - accuracy: 0.4917 - precision: 0.9717 - recall: 0.9546
-Epoch 6/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0164 - accuracy: 0.4956 - precision: 0.9793 - recall: 0.9677
-Epoch 7/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0118 - accuracy: 0.5000 - precision: 0.9841 - recall: 0.9782
-Epoch 8/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0088 - accuracy: 0.5000 - precision: 0.9885 - recall: 0.9827
-Epoch 9/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0074 - accuracy: 0.4969 - precision: 0.9894 - recall: 0.9866
-Epoch 10/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0056 - accuracy: 0.5020 - precision: 0.9922 - recall: 0.9899
-Epoch 11/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0046 - accuracy: 0.5034 - precision: 0.9931 - recall: 0.9919
-Epoch 12/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0044 - accuracy: 0.5005 - precision: 0.9928 - recall: 0.9917
-Epoch 13/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0034 - accuracy: 0.5044 - precision: 0.9949 - recall: 0.9940
-Epoch 14/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0031 - accuracy: 0.5060 - precision: 0.9953 - recall: 0.9946
-Epoch 15/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0038 - accuracy: 0.5015 - precision: 0.9935 - recall: 0.9926
-Epoch 16/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0028 - accuracy: 0.4984 - precision: 0.9953 - recall: 0.9949
-Epoch 17/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0026 - accuracy: 0.5043 - precision: 0.9957 - recall: 0.9950
-Epoch 18/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0027 - accuracy: 0.5006 - precision: 0.9957 - recall: 0.9951
-Epoch 19/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0029 - accuracy: 0.5046 - precision: 0.9950 - recall: 0.9944
-Epoch 20/20
-625/625 [==============================] - 10s 16ms/step - loss: 0.0026 - accuracy: 0.5057 - precision: 0.9960 - recall: 0.9948
-2021-12-19 09:49:21.336372: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
-32/32 [==============================] - 1s 12ms/step - loss: 0.0224 - accuracy: 0.4838 - precision: 0.9786 - recall: 0.9721
-2021-12-19 09:49:21.846841: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2021-12-19 10:17:24.122601: W tensorflow/core/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
+Epoch 1/10
+2021-12-19 10:17:24.441305: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+625/625 [==============================] - 12s 19ms/step - loss: 0.3322 - binary_accuracy: 0.8988 - true_positives: 25.0000 - true_negatives: 287576.0000 - false_positives: 279.0000 - false_negatives: 32120.0000
+Epoch 2/10
+625/625 [==============================] - 12s 19ms/step - loss: 0.2995 - binary_accuracy: 0.9014 - true_positives: 903.0000 - true_negatives: 287539.0000 - false_positives: 316.0000 - false_negatives: 31242.0000
+Epoch 3/10
+625/625 [==============================] - 12s 19ms/step - loss: 0.1218 - binary_accuracy: 0.9552 - true_positives: 20687.0000 - true_negatives: 284983.0000 - false_positives: 2872.0000 - false_negatives: 11458.0000
+Epoch 4/10
+625/625 [==============================] - 12s 19ms/step - loss: 0.0459 - binary_accuracy: 0.9856 - true_positives: 29069.0000 - true_negatives: 286337.0000 - false_positives: 1518.0000 - false_negatives: 3076.0000
+Epoch 5/10
+625/625 [==============================] - 12s 19ms/step - loss: 0.0262 - binary_accuracy: 0.9919 - true_positives: 30526.0000 - true_negatives: 286881.0000 - false_positives: 974.0000 - false_negatives: 1619.0000
+Epoch 6/10
+625/625 [==============================] - 12s 19ms/step - loss: 0.0173 - binary_accuracy: 0.9947 - true_positives: 31122.0000 - true_negatives: 287172.0000 - false_positives: 683.0000 - false_negatives: 1023.0000
+Epoch 7/10
+625/625 [==============================] - 11s 18ms/step - loss: 0.0121 - binary_accuracy: 0.9962 - true_positives: 31426.0000 - true_negatives: 287344.0000 - false_positives: 511.0000 - false_negatives: 719.0000
+Epoch 8/10
+625/625 [==============================] - 11s 18ms/step - loss: 0.0088 - binary_accuracy: 0.9973 - true_positives: 31647.0000 - true_negatives: 287491.0000 - false_positives: 364.0000 - false_negatives: 498.0000
+Epoch 9/10
+625/625 [==============================] - 11s 18ms/step - loss: 0.0066 - binary_accuracy: 0.9979 - true_positives: 31767.0000 - true_negatives: 287563.0000 - false_positives: 292.0000 - false_negatives: 378.0000
+Epoch 10/10
+625/625 [==============================] - 12s 18ms/step - loss: 0.0049 - binary_accuracy: 0.9985 - true_positives: 31872.0000 - true_negatives: 287645.0000 - false_positives: 210.0000 - false_negatives: 273.0000
+2021-12-19 10:19:20.807232: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+32/32 [==============================] - 1s 16ms/step - loss: 0.0279 - binary_accuracy: 0.9928 - true_positives: 1568.0000 - true_negatives: 14317.0000 - false_positives: 46.0000 - false_negatives: 69.0000
+2021-12-19 10:19:21.457149: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
 
 Process finished with exit code 0
 ```

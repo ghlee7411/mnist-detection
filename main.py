@@ -184,8 +184,8 @@ def main():
 
     model.compile(optimizer='adam',
                   loss='binary_crossentropy',
-                  metrics=['accuracy', 'Precision', 'Recall'])
-    model.fit([x1_train, x2_train], y_train, epochs=20)
+                  metrics=['BinaryAccuracy', 'TruePositives', 'TrueNegatives', 'FalsePositives', 'FalseNegatives'])
+    model.fit([x1_train, x2_train], y_train, epochs=10)
     model.evaluate([x1_test, x2_test], y_test, verbose=1)
     num_eval_samples = 10
 
