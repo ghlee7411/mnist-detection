@@ -33,7 +33,6 @@ def get_tiled_image(images, labels, w, h, n):
                +----+ +----+ +----+ +----+
 
     LABELS:    [1, 2, 3, 4]
-    TARGET:    [1] (note. randomly chosen)
 
     to tiled image.
 
@@ -149,8 +148,8 @@ def cnn_detector_4x4(input_1_shape, input_2_shape):
     x = Concatenate(axis=-1)([x1, x2])
 
     x = Conv2D(filters=32, kernel_size=4, padding='same', strides=2, activation='relu')(x)  # 7,7,32
-    y = Conv2D(filters=1, kernel_size=4, padding='same', strides=2, activation='sigmoid')(x)  # 4,4,1
-    y = Reshape((4, 4))(y)
+    x = Conv2D(filters=1, kernel_size=4, padding='same', strides=2, activation='sigmoid')(x)  # 4,4,1
+    y = Reshape((4, 4))(x)
     model = Model([input_1, input_2], y, name="MNIST-Detector")
     model.summary()
     return model
